@@ -1,0 +1,9 @@
+header {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: green;
+  background-color: rgba(0, 255, 128, 0.25);
+  border: solid green 1px;
+}
