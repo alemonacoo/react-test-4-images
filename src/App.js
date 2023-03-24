@@ -1,13 +1,18 @@
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import "./style/App.css";
+import ImageList from "./components/ImageList";
 
 function App() {
-  console.log(process.env.REACT_APP_API_URL);
+  const handleSubmit = (term) => {
+    console.log("search ", term);
+  };
+
   return (
     <div className="App">
       <Header title="React Test 4 - Images" />
-      <SearchBar />
+      <SearchBar onSubmit={handleSubmit} />
+      <ImageList />
     </div>
   );
 }
